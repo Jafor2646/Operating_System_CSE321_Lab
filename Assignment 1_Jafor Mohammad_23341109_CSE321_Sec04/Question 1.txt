@@ -1,0 +1,42 @@
+a.
+touch 23341109_1.txt
+touch 23341109_2.txt
+touch 23341109_3.txt
+touch 23341109_4.txt
+mkdir Jafor1
+mkdir Jafor2
+mv 23341109_1.txt Jafor1
+mv 23341109_2.txt Jafor1
+cp 23341109_1.txt ~/DeskTtop/CSE_321_Assignmen1/Jafor2
+cp 23341109_2.txt ~/DeskTtop/CSE_321_Assignmen1/Jafor2
+cd ..
+mkdir Jafor3
+cp -r Jafor1 Jafor3
+cd Jafor3
+ls -l
+chmod +rx Jafor1
+chmod -w Jafor1
+cd ..
+l
+mv ~/Desktop/CSE_321_Assignmen1/Jafor3 ~/root
+rm -r Jafor1
+rm -r Jafor2
+rm 23341109_3.txt
+rm 23341109_4.txt
+
+b.
+touch course.txt
+nano course.txt
+CSE321
+Operating System
+Section: 04
+CSE331
+Autometa
+Section: 13
+CSE370
+Database Management System
+Section: 06
+grep -o -i CSE course.txt | wc -l
+
+c. ls -a
+d. head -17 lines.txt | tail +5
